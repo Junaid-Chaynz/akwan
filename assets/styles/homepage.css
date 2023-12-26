@@ -1,0 +1,20 @@
+.homePage{
+    background-color: rgb(221 240 239);
+}
+
+.homebannerimg{
+    width: 100%;
+}
+
+.imgs_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.homePage img{
+    max-width: 100%;
+}
+

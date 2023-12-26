@@ -11,9 +11,108 @@ p {
 
 a {
     text-decoration: none !important;
+    transition: .3s all ease;
 }
 
+a:hover {
+    transition: .3s all ease;
+}
+
+img {
+    max-width: 100%;
+}
 
 body {
     font-family: '29LT Kaff', sans-serif;
 }
+
+footer {
+    direction: rtl;
+    padding: 0px 0 50px;
+    background-color: #e4d8e8;
+}
+
+.ftlogobx {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ftimg {
+    width: 38%;
+    max-width: 200px;
+}
+
+.srchbx {
+    width: 46%;
+    max-width: 400px;
+}
+
+.srchinp {
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    width: 100%;
+    color: #db6a38;
+}
+
+.brdimg {
+    width: 100%;
+}
+
+.sendbtn {
+    border: none;
+    outline: none;
+    background-color: #db6a38;
+    color: #fff;
+    font-weight: 600;
+    padding: 6px 20px;
+    border-radius: 8px;
+    transition: .3s all ease;
+}
+
+.sendbtn:hover {
+    background-color: #c46035;
+    transition: .3s all ease;
+}
+
+.fth4 {
+    color: #db6a38;
+}
+
+.ftanc {
+    color: #db6a38;
+    display: block;
+    margin-top: 10px;
+}
+
+.ftanc:hover {
+    color: #c46035;
+}
+
+.socialcontainer {
+    display: flex;
+    gap: 10px 16px;
+}
+
+
+
+.navbar{
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    width:100%;
+}
+
+.first_icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

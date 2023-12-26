@@ -1,0 +1,110 @@
+.prd_det {
+    max-width: 100%;
+}
+
+.prd_det_container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.side_prd_det {
+    background-color: #dcefee;
+    padding: 40px 20px;
+    direction: rtl;
+    color: #1c937f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.desc {
+    display: flex;
+    gap: 10px;
+}
+
+.desc_prd {
+    flex: 1;
+}
+
+.quantity {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.avlblty {
+    background-color: #ad8abb;
+    padding: 3px 10px;
+    color: #fff;
+    border-radius: 16px;
+    min-width: 120px;
+    text-align: center;
+}
+
+.counter {
+    padding: 3px 10px;
+    color: #ad8abb;
+    border-radius: 16px;
+    border: 1px solid #ad8abb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.munsa {
+    margin: 20px 0;
+}
+
+.srvs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.srvs>div {
+    padding: 20px 20px 0;
+    width: 44%;
+}
+
+.srimg {
+    width: 80px;
+    height: 80px;
+    object-fit: scale-down;
+    margin-bottom: 16px;
+}
+
+.tabs_bx {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tabs_bx>div {
+    display: flex;
+    gap: 14px;
+}
+
+.tbimg {
+    width: 32px;
+    display: block;
+}
+
+.bckimg {
+    width: 32px;
+}
+
+.btmside {
+    background-color: #db6a38;
+    padding: 3px 10px;
+    color: #fff;
+    border-radius: 16px;
+    text-align: center;
+    width: fit-content;
+    margin-top: 20px;
+}

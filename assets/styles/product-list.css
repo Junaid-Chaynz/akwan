@@ -2,3 +2,84 @@ main {
     background-color: #e4d8e8;
     min-height: 100vh;
 }
+
+.prd_list {
+    padding: 50px 0;
+}
+
+.title_prd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.title_prd h2 {
+    color: #db6a38;
+    margin-bottom: 0;
+}
+
+.breadcrmb {
+    color: #db6a38;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.brdanc {
+    color: #db6a38;
+}
+
+.brdanc:hover {
+    color: #c46035;
+}
+
+.prd_flx {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 5px 5px;
+    color: #db6a38;
+    font-weight: 600;
+}
+
+.crd_anc {
+    display: block;
+    width: 100%;
+}
+
+.img_bx {
+    position: relative;
+    aspect-ratio: 1/1;
+}
+
+.discount_img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.prd_img {
+    aspect-ratio: 1/1;
+    width: 100%;
+}
+
+.prd_flx>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.cut-off {
+    position: relative;
+}
+
+.cut-off>span {
+    opacity: .8;
+}
+
+.cut-off-img {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 40px;
+}
