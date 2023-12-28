@@ -27,7 +27,6 @@ body {
 }
 
 footer {
-    direction: rtl;
     padding: 0px 0 50px;
     background-color: #e4d8e8;
 }
@@ -53,7 +52,7 @@ footer {
     background-color: transparent;
     padding: 10px;
     width: 100%;
-    color: #db6a38;
+    color: rgb(240 98 36);
 }
 
 .brdimg {
@@ -63,7 +62,7 @@ footer {
 .sendbtn {
     border: none;
     outline: none;
-    background-color: #db6a38;
+    background-color: rgb(240 98 36);
     color: #fff;
     font-weight: 600;
     padding: 6px 20px;
@@ -77,11 +76,12 @@ footer {
 }
 
 .fth4 {
-    color: #db6a38;
+    color: rgb(240 98 36);
+    margin-bottom: 0;
 }
 
 .ftanc {
-    color: #db6a38;
+    color: rgb(240 98 36);
     display: block;
     margin-top: 10px;
 }
@@ -97,22 +97,351 @@ footer {
 
 
 
-.navbar{
-    position: fixed;
+.navbar {
+    position: sticky;
+    top: 0;
     width: 100%;
+    z-index: 99;
 }
 
-.navbar-content{
+.navbar-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
-    width:100%;
+    width: 100%;
 }
 
-.first_icons{
+.first_icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.cart_bar {
+    background-color: #dcefee;
+    padding: 40px 20px 20px;
+    color: #1c937f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 500px;
+    height: 100vh;
+    width: calc(100% - 30px);
+    max-width: 480px;
+    min-width: 300px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: -500px;
+    overflow-y: auto;
+    transition: .5s all ease;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.cart_bar::-webkit-scrollbar {
+    display: none;
+}
+
+.cart_bar.act {
+    transition: .5s all ease;
+    right: 0;
+}
+
+.cart_bar.rtl_cart {
+    right: unset;
+    left: -500px;
+}
+
+.cart_bar.rtl_cart.act {
+    right: unset;
+    left: 0;
+}
+
+.add_chrges {
+    color: #ad8abb;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.progress_box {
+    position: relative;
+    margin: 40px 0 20px;
+    height: 20px;
+}
+
+.progress_border {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress_fill {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 14px;
+}
+
+.ant_img {
+    position: absolute;
+    width: 32px;
+    top: -20px;
+    left: 220px;
+    transform: rotateY(180deg);
+}
+
+.crt_prds {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.crt_prds>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.crt_prd_img {
+    width: 140px;
+
+}
+
+.crt_prd_det {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.crt_prd_det h4 {
+    font-size: 20px;
+}
+
+.crt_prd_det h5 {
+    font-size: 18px;
+}
+
+.counter {
+    padding: 0px 10px;
+    width: fit-content;
+    color: #ad8abb;
+    border-radius: 16px;
+    border: 1px solid #ad8abb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.counter span:not(:nth-of-type(2)) {
+    cursor: pointer;
+}
+
+.dlt_btn {
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    align-self: flex-end;
+}
+
+.total_box {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.tlcnt {
+    display: flex;
+    gap: 14px;
+    justify-content: space-between;
+}
+
+.total {
+    width: 47%;
+    font-size: 18px;
+}
+
+.total_amount {
+    width: 47%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.checkout {
+    width: 100%;
+    background-color: #1c937f;
+    color: #fff;
+    text-align: center;
+    padding: 1px 10px;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    font-size: 18px;
+}
+
+.checkout:hover {
+    background-color: #136d5e;
+}
+
+.addcrd {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.addcrd a {
+    color: #ad8abb;
+    font-size: 18px;
+}
+
+.addcrd a:hover {
+    text-decoration: underline !important;
+}
+
+.tabs_bx {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tabs_bx>div {
+    display: flex;
+    gap: 14px;
+}
+
+.tbimg {
+    width: 32px;
+    display: block;
+}
+
+.bckimg {
+    width: 32px;
+}
+
+/* ============================== Purple Sidebar menu ===============================   */
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+    z-index: 100;
+}
+
+.sidebar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/sidemenu.png');
+    background-size: cover;
+    z-index: -1;
+    transform: rotateY(180deg);
+}
+
+.sidebar.rtl_sidebar {
+    right: 0;
+}
+
+.sidebar.rtl_sidebar::before {
+    transform: rotateY(0deg);
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.content {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+
+/* Button Style */
+#toggleBtn {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.main_nav_head {
+    color: #d7f1ef;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+
+    font-size: 2rem;
+}
+
+.menu-drawer__navigation {
+    padding: 0 10px;
+}
+
+.list-menu .menu-drawer {
+    color: #d7f1ef;
+    margin: 0px 15px;
+    font-weight: 200;
+
+}
+
+.menubottom_arabic {
+    color: #d7f1ef;
+    font-weight: bold;
+}
+
+.menu_dropdowns {
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 10px 0 27px;
+}
+
+.menu_dropdowns select {
+    border: none;
+    background: transparent;
+    color: #d7f1ef;
+}
+
+.menu_dropdowns select option {
+
+    color: black;
+}
+
+/* ====================End Purple Sidebar menu===============================   */

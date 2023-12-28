@@ -16,6 +16,28 @@
 
 <body>
 
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-content">
+                <div class="first_icons">
+                    <a class="nav-link" href="#"> <img src="./assets/images/headerHeart.png" /></a>
+                    <a class="nav-link cart_btn" href="javascript:void(0)"> <img
+                            src="./assets/images/headerCart.png" /></a>
+                </div>
+
+                <div>
+                    <a class="nav-link" href="#"> <img src="./assets/images/akwanlogo.png" /></a>
+
+                </div>
+                <div>
+                    <a class="nav-link" href="#" onclick="toggleSidebar(event)"> <img width="100"
+                            src="./assets/images/Menu Icon.gif" /></a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <main class="prd_list">
         <div class="container">
             <div class="title_prd">
@@ -31,8 +53,8 @@
                     <a href="#" class="crd_anc">
                         <img src="./assets/images/product-image.webp" alt="" class="prd_img">
                         <div class="prd_flx">
-                            <div>AED 100.00</div>
                             <h4>كتل النار</h4>
+                            <div>AED 100.00</div>
                         </div>
                     </a>
                 </div>
@@ -43,8 +65,8 @@
                             <img src="./assets/images/product-image.webp" alt="" class="prd_img">
                         </div>
                         <div class="prd_flx">
-                            <div>AED 100.00</div>
                             <h4>كتل النار</h4>
+                            <div>AED 100.00</div>
                         </div>
                     </a>
                 </div>
@@ -55,8 +77,8 @@
                             <img src="./assets/images/product-image.webp" alt="" class="prd_img">
                         </div>
                         <div class="prd_flx">
-                            <div>AED 100.00</div>
                             <h4>كتل النار</h4>
+                            <div>AED 100.00</div>
                         </div>
                     </a>
                 </div>
@@ -67,8 +89,8 @@
                             <img src="./assets/images/product-image.webp" alt="" class="prd_img">
                         </div>
                         <div class="prd_flx">
-                            <div>AED 100.00</div>
                             <h4>كتل النار</h4>
+                            <div>AED 100.00</div>
                         </div>
                     </a>
                 </div>
@@ -76,8 +98,8 @@
                     <a href="#" class="crd_anc">
                         <img src="./assets/images/product-image.webp" alt="" class="prd_img">
                         <div class="prd_flx">
-                            <div>AED 100.00</div>
                             <h4>كتل النار</h4>
+                            <div>AED 100.00</div>
                         </div>
                     </a>
                 </div>
@@ -85,6 +107,7 @@
                     <a href="#" class="crd_anc">
                         <img src="./assets/images/product-image.webp" alt="" class="prd_img">
                         <div class="prd_flx">
+                            <h4>كتل النار</h4>
                             <div>
                                 <span>AED 100.00</span>
                                 <span class="cut-off">
@@ -92,7 +115,6 @@
                                     <img src="./assets/images/cutoff.svg" alt="" class="cut-off-img">
                                 </span>
                             </div>
-                            <h4>كتل النار</h4>
                         </div>
                     </a>
                 </div>
@@ -157,8 +179,202 @@
         </div>
     </footer>
 
+    <div class="cart_bar">
+        <div class="cart_top_bx">
+            <div class="tabs_bx">
+                <div>
+                    <a href="javascript:void(0)" class="tbimg cart_btn">
+                        <img src="./assets/images/cart.svg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <img src="./assets/images/back.svg" alt="" class="bckimg">
+                    <span>عودة</span>
+                </div>
+            </div>
+            <h4 class="add_chrges">تبقى 100 ً ريال إضافية لتكون مؤهلا للشحن المجاني</h4>
+            <div class="progress_box">
+                <img src="./assets/images/barborder.svg" alt="" class="progress_border">
+                <img src="./assets/images/barfilled.svg" alt="" class="progress_fill">
+                <img src="./assets/images/ant.svg" alt="" class="ant_img">
+            </div>
+            <div class="crt_prds">
+                <div>
+                    <img src="./assets/images/product-image.webp" alt="" class="crt_prd_img">
+                    <div class="crt_prd_det">
+                        <div>
+                            <h4>لعبة كاميرا</h4>
+                            <h5>200 SAR</h5>
+                        </div>
+
+                        <div class="counter">
+                            <span>-</span>
+                            <span>1</span>
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <button class="dlt_btn">
+                        <img src="./assets/images/dustbin.svg" />
+                    </button>
+                </div>
+                <div>
+                    <img src="./assets/images/product-image.webp" alt="" class="crt_prd_img">
+                    <div class="crt_prd_det">
+                        <div>
+                            <h4>لعبة كاميرا</h4>
+                            <h5>200 SAR</h5>
+                        </div>
+
+                        <div class="counter">
+                            <span>-</span>
+                            <span>1</span>
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <button class="dlt_btn">
+                        <img src="./assets/images/dustbin.svg" />
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="total_box">
+            <img src="./assets/images/totalbar.svg" alt="" class="bartotal">
+            <div class="tlcnt">
+                <h4 class="total">المبلغ الإجمالي</h4>
+                <div class="total_amnt">SAR 400.00</div>
+            </div>
+            <button class="checkout">
+                الدفع
+            </button>
+            <div class="addcrd">
+                <!-- <img src="./assets/images/lft_shine.svg" alt="" class="shineleft"> -->
+                <a href="">شراء كهدية؟ أضف بطاقة</a>
+                <!-- <img src="./assets/images/ryt_shine.svg" alt="" class="shineright"> -->
+            </div>
+        </div>
+    </div>
+
+    <!-------------------- sidebar menu -------------------------->
+
+    <div id="mySidebar" class="sidebar">
+        <div class="d-flex justify-content-between align-items-center">
+            <img width="70" src="./assets/images/Menu Icon.gif" alt="Sidebar Image">
+            <a class="ms-3" onclick=" toggleSidebar(event)"><img width="30" src="./assets/images/closemenu.png" /></a>
+        </div>
+
+        <nav class="menu-drawer__navigation mt-4">
+            <ul class=" list-menu" role="list">
+                <h3 class="main_nav_head">تسوق</h3>
+
+                <li><a class="menu-drawer">
+                        كل المنتج ات
+                    </a></li>
+
+                <li><a id="HeaderDrawer-مجموعات" class="menu-drawer">
+                        مجموعات
+                    </a></li>
+
+                <li><a id="HeaderDrawer-حسب-فئة-العمرية" class="menu-drawer">
+                        حسب فئة العمرية
+                    </a></li>
+                <li><a id="HeaderDrawer-حسب-نوع-اللعب" class="menu-drawer">
+                        حسب نوع اللعب
+                    </a></li>
+            </ul>
+            <h4 class="menubottom_arabic">إلعب<br>
+                مذكرة أكوان<br>
+                معلومات<br>
+                إعدادات الحساب</h4>
+
+
+
+        </nav>
+
+        <div class="menu_dropdowns">
+
+            <select name="cars" id="cars">
+                <option value="volvo">
+                    أستراليا
+                </option>
+                <option value="saab">
+                    ألمانيا
+                </option>
+                <option value="mercedes">
+                    أيرلندا
+                </option>
+                <option value="audi">
+                    إسبانيا
+                </option>
+            </select>
+
+            <select name="cars" id="cars">
+                <option value="volvo">
+                    العربية
+                </option>
+                <option value="saab">English</option>
+
+            </select>
+        </div>
+
+
+    </div>
+
+    <!-------------------- sidebar menu End-------------------------->
+
+
     <script src="./assets/bootstrap.min.js"></script>
     <script src="./assets/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+
+        function toggleSidebar(e) {
+            e.stopPropagation()
+            var sidebar = document.querySelector('.sidebar');
+            var content = document.querySelector('.content');
+
+            if (sidebar.style.width === '300px') {
+                sidebar.style.width = '0';
+                content.style.marginLeft = '0';
+            } else {
+                sidebar.style.width = '300px';
+                content.style.marginLeft = '300px';
+            }
+        }
+
+        function setCartBarPosition() {
+            var isRTL = $('html').attr('dir') === 'rtl';
+
+            if (isRTL) {
+                $('.cart_bar').addClass("rtl_cart");
+                $('.sidebar').addClass("rtl_sidebar");
+            } else {
+                $('.sidebar').removeClass("rtl_sidebar");
+            }
+        }
+
+        setCartBarPosition();
+
+        $(document).on("click", ".cart_btn", function (e) {
+            e.stopPropagation()
+            $(".cart_bar").toggleClass("act");
+        })
+
+        $(document).on("click", "body>div:not(.cart_bar,.sidebar)", function () {
+
+            $(".cart_bar").removeClass("act")
+
+            var sidebar = document.querySelector('.sidebar');
+            var content = document.querySelector('.content');
+
+            if (sidebar.style.width === '300px') {
+                sidebar.style.width = '0';
+                content.style.marginLeft = '0';
+            }
+        })
+    </script>
+
 
 </body>
 
